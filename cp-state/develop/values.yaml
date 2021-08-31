@@ -13,3 +13,5 @@ service:
       port: 9500
       targetPort: http
       protocol: TCP
+
+containerResources: {}
