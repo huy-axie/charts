@@ -1,0 +1,17 @@
+imagePullSecrets:
+ - gcred
+
+containerPorts:
+  http:
+    port: 9500
+    protocol: TCP
+
+service:
+  enabled: true
+  ports:
+    app:
+      port: 9500
+      targetPort: http
+      protocol: TCP
+
+containerResources: {}
