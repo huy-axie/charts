@@ -1,6 +1,11 @@
 imagePullSecrets:
  - gcred
 
+containerImage:
+  repository: gcr.io/test-servers-256610/rust_exchange-rate-server
+  tag: PR-200-39b9fc4
+  pullPolicy: Always
+
 containerPorts:
   http:
     port: 9500
